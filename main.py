@@ -1,17 +1,20 @@
-"""News image entry for make.fun: news-image-20261123.
+"""News image entry for make.fun: news-image-20261123, v2.
 
 Sums up the world news of Monday 23 November 2026 in one image.
 
 The image itself is entry.png beside this file. It was drawn for this
-entry as a one-page newspaper front page: masthead plus the date,
-then five stories -- the Iran war widening to Bahrain and the Strait
-of Hormuz, the COP31 climate talks collapsing in Antalya, Russian
-strikes killing civilians in Ukraine, Ukrainian naval drones sinking
-a Russian warship off Libya, and the Democrats winning the US House.
+entry as a dense one-page newspaper front page: a masthead with the
+date, a lead story on the COP31 climate talks collapsing, four big
+headlines (the Iran war widening, Ukraine sinking a Russian warship,
+Russian strikes on the Kyiv region, the Democrats winning the US
+House), and a dated "day in brief" grid — 32 stories in total, every
+one reported on 23 November 2026, across six regions.
 
 This program only copies that image to the output path. It uses the
 standard library only, makes no network call, and reads nothing
 outside its own directory, so running it twice writes the same bytes.
+The image was rendered at build time by render_image.py (Pillow),
+which wraps every line by measured pixel width so no text overlaps.
 """
 
 import os
